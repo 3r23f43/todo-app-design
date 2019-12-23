@@ -59,12 +59,13 @@ li{
 .check__box{
 
 	position: absolute;
-	background-image: url('empty.png'); 
-	width: 1.29em;
-	height: 1.25em;
+	background-image: url('empty.svg'); 
+	width: 2.25em;
+	height: 2.25em;
 	margin-left: 0em;
-	margin-top: 1.2em;
+	margin-top: 0.8em;
 	text-decoration: line-through;
+	transform:scale(0.7);
 }
 .check{
 	
@@ -73,10 +74,11 @@ li{
 
 }
 .namet{
-	padding-left: 2em;
+	padding-left: 2.7em;
+	margin-top: 0.15em;
 }
 .check__input:checked + .check__box{
-	background-image: url('compl.png'); 
+	background-image: url('compl.svg'); 
 
 }
 
