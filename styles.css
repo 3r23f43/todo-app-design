@@ -51,18 +51,24 @@ li{
 	border-right: 1px solid #e6e6e6;
     background: #ffffff;
     color: #666666;
+    padding: 0.18em 0;
+    line-height: 3vmin;
+    padding: 1% 0;
+
 }
 .check__input{
 	-webkit-appearance: none;
 }
 .check__box{
 	position: absolute;
-	background-image: url('empty.png'); 
-	width: 1.25em;
-	height: 1.25em;
+	background-image: url('empty.svg'); 
+	width: 2.25em;
+	height: 2.25em;
 	margin-left: 0em;
-	margin-top: 1.2em;
+	margin-top: 0.8em;
+	line-height: 0.8em;
 	text-decoration: line-through;
+
 }
 .check{
 	
@@ -71,10 +77,12 @@ li{
 
 }
 .namet{
-	padding-left: 2em;
+	padding-left: 3em;
+	margin-top: 0.15em;
 }
 .check__input:checked + .check__box{
-	background-image: url('compl.png'); 
+	background-image: url('compl.svg'); 
+
 }
 
 .delete{
@@ -86,6 +94,7 @@ li{
 	background-repeat : no-repeat;
 	border:none;
 	margin-top: -1.3vw;
+	margin-right: 1vw;
 	margin-bottom: auto;
 	display: flex;
 	margin-left: auto;
@@ -96,19 +105,21 @@ li{
 li:hover{
 	background: #fafafa;
 	cursor: pointer;
+
 }
 li:hover .delete{
     display:block;
+
 
 }
 .empty{
 	height: 10vmin;
 	list-style-type: none;
-	border-bottom: 1px solid #e6e6e6;
 	border-left: 1px solid #e6e6e6;
 	border-right: 1px solid #e6e6e6;
     background: #ffffff;
     color: #666666;
+    border-bottom: 1px solid #e6e6e6;
 
 }
 
@@ -120,11 +131,12 @@ li:hover .delete{
 	height: 12px;
 	border: none;
 	margin: 0.5vw;
-	margin-top: 2vw;
+	/*margin-top: 1.5vw;*/
 }
 .input__name{
-	margin-top: 1.9vw;
+	/*margin-top: 1.5vw;*/
 	width: 92%;
+	margin-top: 0.3vw;
 	border: none;
 }
 .input{
@@ -133,9 +145,10 @@ li:hover .delete{
 }
 input[type=checkbox]:checked  + span + .namet{
   text-decoration: line-through;
+  color: #d8d8d8;
 }
 footer{
-	overflow:hidden;
+
 }
 .container{
 	white-space:nowrap;
@@ -144,6 +157,7 @@ footer{
 	font-size: 15px;
 	margin-bottom: auto;
 	margin-top: auto;
+	padding: 0.15vw
 
 }
 input[type="radio"]{
@@ -171,10 +185,9 @@ input[type="radio"]{
 .container{
 		display: flex;
         align-items: center; 
-        height: 3vw;
-        border-bottom: 1px solid #e6e6e6;
 	border-left: 1px solid #e6e6e6;
 	border-right: 1px solid #e6e6e6;
+	padding: 13px;
 }
 .clear{
 	margin-left: auto;
@@ -195,13 +208,13 @@ input[type="radio"]{
 	border-radius: 4px;
 }
 .down_1{
-	height: 0.3vw;
+	height: 1.9vw;
 	width: 89vmin;
 	margin: auto;
 }
 .down_2{
 	background: #fff;
-	height: 0.4vw;
+	height: 0.3vw;
 	width: 88vmin;
 	margin: auto;
 	box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .2);
@@ -218,4 +231,6 @@ box-shadow: 111px 50000px 500px 100px #333;
 	z-index: -2;
 	position: relative;
 }
-
+.el{
+	padding: 1.5em 0;
+}
