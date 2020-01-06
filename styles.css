@@ -31,7 +31,15 @@ header{
   vertical-align: middle;
 }
 .check__input{
-	-webkit-appearance: none;
+	-webkit-appearance: none; /* chrome, edge*/
+	appearance: none; /* for future */
+    -moz-appearance: none; /* firefox*/
+}
+.check__input::-ms-expand{ /* IE */
+    display: none;
+}
+input[type="radio"]::-ms-expand{
+    display: none;
 }
 input[name="input_name"]::-webkit-input-placeholder {
     color: #e0e0e0;
@@ -40,11 +48,26 @@ input[name="input_name"]::-webkit-input-placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
+input[name="input_name"]::-moz-placeholder {
+    color: #e0e0e0;
+    font-weight: 300;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+input[name="input_name"]:-ms-input-placeholder { /*edge*/
+    color: #e0e0e0;
+    font-weight: 100;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
 .input__name{
-	height: 63px;
-    width: 504px;
     position: relative;
-    top: -23px;
+    flex: 1;
+}
+.input{
+	display: flex;
 }
 ul{
     margin: 0;
@@ -124,7 +147,6 @@ li:hover .delete{
     height: 65px;
     border: none;
     position: relative;
-    top: -23px;
 }
 .input__name{
     border: none;
