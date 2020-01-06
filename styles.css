@@ -84,14 +84,14 @@ li{
 }
 .delete{
     position: relative;
-    background: transparent;
-    background-image: url('close.png');
+    background: #fff;
+
     width: 18px;
     height: 18px;
     background-repeat : no-repeat;
     border:none;
     margin-left: auto;
-    display: none;
+    display: block;
     right: 10px;
     top: -15px;
 }
@@ -104,6 +104,8 @@ li:hover{
 }
 li:hover .delete{
     display:block;
+    background: transparent;
+    background-image: url('close.png');
 }
 .empty{
     height: 60px;
