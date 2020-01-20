@@ -29,17 +29,22 @@ header{
 .check__box {
   display: inline-block;
   vertical-align: middle;
+  
 }
 .check__input{
 	-webkit-appearance: none; /* chrome, edge*/
 	appearance: none; /* for future */
     -moz-appearance: none; /* firefox*/
+    position: absolute; 
+    left: -9999px;
 }
 .check__input::-ms-expand{ /* IE */
-    display: none;
+    position: absolute; 
+    left: -9999px;
 }
-input[type="radio"]::-ms-expand{
-    display: none;
+input[type="radio"]{ /* IE */
+    position: absolute; 
+    left: -9999px;
 }
 input[name="input_name"]::-webkit-input-placeholder {
     color: #e0e0e0;
